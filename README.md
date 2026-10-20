@@ -1,4 +1,4 @@
-# dsh-wallpaper
+﻿# dsh-wallpaper
 
 给 **DeepSeek Harness** Web GUI 换壁纸的插件：图片、视频、跟随系统桌面壁纸，
 全部在一个面板里切换，透明度/暗度/填充方式都能调。
@@ -32,7 +32,7 @@ DSH 本身没有壁纸设置（设置 → 通用 → 外观只有浅色/深色/�
 2. 粘下面任意一种：
 
    ```
-   https://github.com/<你的用户名>/dsh-wallpaper
+   https://github.com/strugglejin/dsh-wallpaper
    ```
 
    或者本机目录：
@@ -121,3 +121,4 @@ node src/build.mjs --default street
 ## License
 
 MIT
+
