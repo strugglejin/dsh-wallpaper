@@ -1,0 +1,40 @@
+{
+  "name": "dsh-wallpaper-bundle",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Wallpaper for the DeepSeek Harness Web GUI: images, videos, follow-the-desktop, with a built-in control panel",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "test": "node src/selftest.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "wallpaper",
+    "plugin"
+  ],
+  "license": "MIT"
+}

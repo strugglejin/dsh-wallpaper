@@ -1,0 +1,6 @@
+# Mounts the wallpaper row. The row names this package itself, which is what
+# makes both halves resolvable: the bundle contributes this patch, and the row
+# is the Loader entry whose browser half is served from exports["./client"].
+- insert:
+    - id: wallpaper
+      name: 'dsh-wallpaper-bundle'
