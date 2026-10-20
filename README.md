@@ -1,15 +1,25 @@
-﻿# dsh-wallpaper
+# dsh-wallpaper
 
-给 **DeepSeek Harness** Web GUI 换壁纸的插件：图片、视频、跟随系统桌面壁纸，
-全部在一个面板里切换，透明度/暗度/填充方式都能调。
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-plugin-4f46e5)](https://github.com/strugglejin/dsh-wallpaper)
 
-DSH 本身没有壁纸设置（设置 → 通用 → 外观只有浅色/深色/跟随系统、字号和字体），
-这个包走它自己的插件机制，并自带一个浮在右下角的控制面板。
+给 **DeepSeek Harness** Web GUI 换壁纸的插件：**图片、视频、跟随系统桌面壁纸**，一个面板全搞定，透明度、暗度、填充方式都能调。
 
-![画面示意](docs/preview.jpg)
+DSH 自带的外观设置只有浅色/深色、字号和字体，没有壁纸选项。这个插件走 DSH 的插件机制，自带一个浮在右下角的控制面板。
 
-> 上图是画布区域按默认参数合成出来的底色示意，不是完整界面截图。
-> 想换成真实截图，把图片放进 `docs/` 再改这一行即可。
+![界面示意](docs/preview.jpg)
+
+> 图中为默认参数下的画面合成示意；真实截图可替换 `docs/preview.jpg`。
+
+## 目录
+
+- [功能](#功能)
+- [安装](#安装)
+- [使用](#使用)
+- [它是怎么工作的（以及踩过的坑）](#它是怎么工作的以及踩过的坑)
+- [自己构建](#自己构建)
+- [已知限制](#已知限制)
+- [License](#license)
 
 ## 功能
 
@@ -21,21 +31,20 @@ DSH 本身没有壁纸设置（设置 → 通用 → 外观只有浅色/深色/�
 - **画面填充**：填充（裁边）/ 适应（留边），图片和视频都适用
 - 面板点空白处或按 `Esc` 自动关闭
 
-选择存在 `localStorage`，导入的图片/视频存在 `IndexedDB`，都在本机浏览器里，
-不上传、不进模型上下文。
+选择存在 `localStorage`，导入的图片/视频存在 `IndexedDB`，都在本机浏览器里，不上传、不进模型上下文。
 
 ## 安装
 
-前提：已经装好 DeepSeek Harness（桌面版或 `dsh web` 均可）。
+前提：已安装 DeepSeek Harness（桌面版或 `dsh web` 均可）。
 
 1. 侧栏点 **插件** → 右上 **添加插件** → **安装第三方插件**
-2. 粘下面任意一种：
+2. 粘贴以下任一地址：
 
    ```
    https://github.com/strugglejin/dsh-wallpaper
    ```
 
-   或者本机目录：
+   或本机目录：
 
    ```
    D:\dsh-wallpaper
@@ -121,4 +130,3 @@ node src/build.mjs --default street
 ## License
 
 MIT
-
